@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Udemy-Random</string>
+    <string name="initialNumber">0</string>
+    <string name="btnGenerateText">"Generate random number"</string>
 </resources>
