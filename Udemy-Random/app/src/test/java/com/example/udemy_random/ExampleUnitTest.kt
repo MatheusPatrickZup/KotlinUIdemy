@@ -1,4 +1,4 @@
-package com.example.udemyrandom
+package com.example.udemy_random
 
 import org.junit.Test
 
