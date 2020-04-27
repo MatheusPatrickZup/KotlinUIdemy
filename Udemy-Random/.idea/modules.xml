@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Udemy-Random.iml" filepath="$PROJECT_DIR$/Udemy-Random.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UdemyRandom.iml" filepath="$PROJECT_DIR$/UdemyRandom.iml" group="UdemyRandom" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="UdemyRandom/app" />
     </modules>
   </component>
 </project>
