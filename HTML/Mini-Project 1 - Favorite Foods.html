@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Favorite Foods</title>
+	<style>
+		html, body {
+			height: 100%;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		main {
+			flex-grow: 1;
+		}
+
+		#content {
+			display: flex;
+			flex-direction: column;
+			background: #f6f5f3;
+			margin-right: 25%;
+			margin-left: 25%;
+			border-right: 2px solid #3d3d3f;
+			border-left: 2px solid #3d3d3f;
+			box-shadow: 1px 0px 4px #3d3d3f;
+		}
+
+		#titlebar {
+			background-color: #3d3d3f;
+			display: flex;
+			flex-grow: 1;
+			padding: 10px;
+		}
+
+		.titlebar-link {
+			font-size: 19px;
+			color: white;
+			text-decoration: bold;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+
+		.titlebar-link:hover {
+			color: #f6f5f3;
+		}
+
+		#articles {
+			padding: 0px 20px;
+		}
+
+		#fruit-section {
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+		}
+
+		.fruit {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+
+		.fruit > h2 {
+			color: white;
+			background-color: black;
+			text-decoration: bold;
+			padding: 5px;
+			margin: 0px;
+		}
+	</style>
+</head>
+<body>
+	<main id='content'>
+		<header id='titlebar'>
+			<span class='titlebar-link'>Index</span>
+			<span class='titlebar-link'>Food</span>
+			<span class='titlebar-link'>About</span>
+		</header>
+
+		<main id='articles'>
+			<nav id='frut-nav'>
+				<h2>Favorite Foods</h2>
+				<ul>
+					<a href='#eggs'><li class='fruit-link'>Eggs</li></a>
+					<a href='#oranges'><li class='fruit-link'>Oranges</li></a>
+					<a href='#avocados'><li class='fruit-link'>Avocados</li></a>
+					<a href='#lettuce'><li class='fruit-link'>Lettuce</li></a>
+					<a href='#bananas'><li class='fruit-link'>Bananas</li></a>
+				</ul>
+			</nav> 
+			<section id='fruit-section'>
+				<article id='eggs' class='fruit'>
+					<h2>Eggs</h2>
+					<img alt="Eggs" src='https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/farm-fresh-eggs-robert-papp.jpg'>
+				</article>
+				<article id='oranges' class='fruit'>
+					<h2>Oranges</h2>
+					<img alt="Oranges" src='https://images.fineartamerica.com/images-medium-large-5/oranges-robert-papp.jpg'>
+				</article>
+				<article id='avocados' class='fruit'>
+					<h2>Avocados</h2>
+					<img alt="Avocados" src='https://images.fineartamerica.com/images-medium-large-5/avocados-robert-papp.jpg'>
+				</article>
+				<article id='lettuce' class='fruit'>
+					<h2>Lettuce</h2>
+					<img alt="Lettuce" src='https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/lettuce-robert-papp.jpg'>
+				</article>
+				<article id='bananas' class='fruit'>
+					<h2>Bananas</h2>
+					<img alt="Bananas" src='https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/bananas-on-white-robert-papp.jpg'>
+				</article>
+			</section>
+		</main>
+	</main>
+</body>
+</html>
