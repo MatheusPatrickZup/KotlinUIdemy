@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Favorite Foods</title>
+	<style>
+		html, body {
+			height: 100%;
+			width: 100%;
+			padding: 0px;
+			margin: 0px;
+			font-family: monospace;
+			display: flex;
+		}
+
+		main {
+			flex-grow: 1;
+		}
+
+		#content {
+			display: flex;
+			flex-direction: column;
+			background: #f6f5f3;
+		}
+
+		#titlebar {
+			background-color: #3d3d3f;
+			display: flex;
+			justify-content: center;
+			flex-grow: 1;
+			padding: 10px;
+			max-height: 25px;
+		}
+
+		.titlebar-link {
+			font-size: 19px;
+			color: white;
+			text-decoration: underline;
+			text-transform: uppercase;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+
+		.titlebar-link:hover {
+			color: #f6f5f3;
+		}
+
+		#articles {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			margin-right: 10%;
+			margin-left: 10%;
+		}
+
+		#contact-title {
+			text-align: center;
+			margin: 25px 0px;
+		}
+
+		#contact-form {
+			background-color: white;
+			padding: 20px;
+			width: 500px;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			text-align: center;
+			margin: auto;
+			border: 1px solid lightgrey;
+		}
+
+		.contact-input {
+			border-top: 0px;
+			border-right: 0px;
+			border-left: 0px;
+			padding: 15px;
+			margin-bottom: 10px;
+		}
+
+		#submit-button {
+			background-color: navy;
+			color: white;
+			width: 100px;
+			padding: 10px;
+			border: 1px solid darkblue;
+			align-self: center;
+			transition: all 0.2s ease-in-out;
+		}
+
+		#submit-button:hover {
+			background-color: lightblue;
+			color: darkblue;
+		}
+
+	</style>
+</head>
+<body>
+	<main id='content'>
+		<nav id='titlebar'>
+			<a href='./index.html'><span class='titlebar-link'>Places</span></a>
+			<a href='./about.html'><span class='titlebar-link'>About</span></a>
+			<a href='./contact.html'><span class='titlebar-link'>Contact</span></a>
+		</nav>
+
+		<main id='articles'>
+			<header>
+				<h2 id='contact-title'>Want to know more? Contact me!</h2>
+			</header> 
+			<form>
+				<div id='contact-form'>
+					<input class='contact-input' type='text' name='name' placeholder='Full name'>
+					<input class='contact-input' type='email' name='email' placeholder="E-mail">
+					<input class='contact-input' type='text' name='contact' placeholder="Contact number">
+					<input id='submit-button' type='submit' value="Submit">
+				</div>
+			</form>
+		</main>
+	</main>
+</body>
+</html>

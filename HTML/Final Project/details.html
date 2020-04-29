@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Favorite Foods</title>
+	<style>
+		html, body {
+			height: 100%;
+			padding: 0px;
+			margin: 0px;
+			font-family: monospace;
+		}
+
+		main {
+			flex-grow: 1;
+		}
+
+		#content {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			background: #f6f5f3;
+		}
+
+		#titlebar {
+			background-color: #3d3d3f;
+			display: flex;
+			justify-content: center;
+			flex-grow: 1;
+			padding: 10px;
+			max-height: 25px;
+		}
+
+		.titlebar-link {
+			font-size: 19px;
+			color: white;
+			text-decoration: underline;
+			text-transform: uppercase;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+
+		.titlebar-link:hover {
+			color: #f6f5f3;
+		}
+
+		#articles {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+		}
+
+		#image-header {
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+			background-image:  url('https://images.fasosites.com/16376_3431063xl.jpg?sold=Sold&hdots=False&v=202002071751&cv=202002071751');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+
+		#articles {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			margin-right: 10%;
+			margin-left: 10%;
+		}
+
+		#content-title {
+			text-align: center;
+			margin: 25px 0px;
+		}
+
+		#content-article {
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+	<main id='content'>
+		<nav id='titlebar'>
+			<a href='./index.html'><span class='titlebar-link'>Places</span></a>
+			<a href='./about.html'><span class='titlebar-link'>About</span></a>
+			<a href='./contact.html'><span class='titlebar-link'>Contact</span></a>
+		</nav>
+
+		<header id='image-header'>
+		</header> 
+		<main id='articles'>
+			<article id='content-article'>
+				<header>
+					<h2 id='content-title'>Sunrise Canyone, Italy</h2>
+				</header> 
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis venenatis nisl. Nunc vel vestibulum felis, nec dictum libero. Nunc et rutrum lorem, non hendrerit turpis. Donec faucibus ultricies gravida. In vehicula et neque nec pulvinar. Sed ex orci, rutrum ac tincidunt a, imperdiet varius dui. Aenean viverra tincidunt quam. Donec mattis viverra ante, nec bibendum neque consequat at. Quisque pharetra felis risus, eget convallis est fermentum nec. Donec bibendum lectus dui, id ornare metus sollicitudin nec. Donec venenatis semper velit eu imperdiet. In cursus erat convallis velit hendrerit, non egestas lectus lobortis. Fusce eget luctus urna.</p>
+				<p>Pellentesque non mi est. Suspendisse eu quam hendrerit purus bibendum vehicula sed vitae lacus. Sed sagittis nulla nec maximus volutpat. Maecenas id interdum orci. Mauris nisl ex, consequat non libero ac, porta tristique augue. Cras ac vestibulum turpis. In nec mi diam. Duis tortor libero, porttitor non lacus tincidunt, pellentesque ultrices massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+				<p>Nulla sed tortor auctor, ultricies nisi sed, scelerisque leo. Phasellus facilisis, risus ac rhoncus semper, magna libero pharetra ex, eu consequat est turpis in nisl. Nunc lobortis libero nec euismod tempus. Aenean pharetra ante ligula, et aliquam arcu pretium non. Sed pellentesque lectus vitae turpis malesuada posuere. Sed non posuere erat. Morbi quis tincidunt magna. Aliquam tincidunt ut eros mattis porttitor. Duis cursus orci ut orci convallis, in suscipit elit tempor. Curabitur id sem at leo suscipit ultrices quis ac purus. Aenean venenatis mollis gravida. Phasellus faucibus turpis lectus, vel bibendum odio luctus ut. Nulla facilisi. In id cursus tortor.</p>
+				<p>Quisque vitae urna sed tellus cursus scelerisque. Proin sed dolor ut tortor varius semper. Nunc fermentum sit amet odio in volutpat. Donec finibus elit a orci condimentum, ut ultrices massa dignissim. Suspendisse potenti. Nam condimentum luctus ex nec aliquam. Suspendisse a mi nec elit lobortis iaculis vel eget mauris. Maecenas rhoncus consequat felis, sit amet blandit diam dictum non. Fusce non diam ut sapien pretium lobortis. Cras aliquet quis lorem eu rhoncus. Suspendisse quam felis, ultrices vel mauris scelerisque, sodales rutrum ante. Nam ornare rutrum leo, maximus viverra dui molestie eget. Maecenas quis consectetur neque. Integer venenatis varius purus id varius. Proin interdum libero id orci efficitur, ac semper purus consectetur. Fusce lacus nunc, fringilla quis congue at, auctor id ipsum.</p>
+				<p>Aenean eget dui vel orci aliquet consectetur. Duis malesuada commodo neque pretium pulvinar. Nunc commodo quam nulla, vel finibus elit commodo non. Vestibulum vitae turpis justo. Nam vel ex sed ipsum egestas blandit quis sit amet lacus. Duis lobortis libero in hendrerit vehicula. Nunc viverra ornare urna, eu blandit erat euismod et. Pellentesque dictum arcu ligula, ut egestas sem blandit a. Pellentesque semper magna sit amet nisl vulputate, et auctor nisi suscipit. </p>
+			</article>
+		</main>
+	</main>
+</body>
+</html>

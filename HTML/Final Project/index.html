@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Beautiful Places</title>
+	<style>
+		html, body {
+			padding: 0px;
+			margin: 0px;
+			font-family: monospace;
+			display: flex;
+		}
+
+		main {
+			flex-grow: 1;
+		}
+
+		#content {
+			display: flex;
+			flex-direction: column;
+			background: #f6f5f3;
+		}
+
+		#titlebar {
+			background-color: #3d3d3f;
+			display: flex;
+			justify-content: center;
+			flex-grow: 1;
+			padding: 10px;
+			max-height: 25px;
+		}
+
+		.titlebar-link {
+			font-size: 19px;
+			color: white;
+			text-decoration: underline;
+			text-transform: uppercase;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+
+		.titlebar-link:hover {
+			color: #f6f5f3;
+		}
+
+		#articles {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		#image-header {
+			width: 100%;
+			min-height: 400px;
+			overflow: hidden;
+			background-image:  url('https://images.fasosites.com/16376_3441628xl.jpg?sold=Sold&hdots=False&v=202002070638&cv=202002071751');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+
+		#image-section-title {
+			text-align: center;
+		}
+
+		#image-section {
+			flex-grow: 1;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			padding: 0px 20px 20px;
+			margin: 0px 70px;
+		}
+
+		.image-link {
+			display: flex;
+			flex-direction: column;
+			flex: 1 0 31%;
+			height: 500px;
+			margin-top: 15px;
+			margin-right: 15px;
+			overflow: hidden; 
+			transition: all .2s ease-in-out;
+			text-decoration: none;
+		}
+
+		.image-link > h2 {
+			color: black;
+			background-color: white;
+			text-align: center;
+			padding: 15px;
+			margin: 0px;
+		}
+
+		.image-link > img {
+			width: auto;
+			height: calc(95% - 52px);
+		}
+
+		.image-link:hover {
+			transform: scale(1.03);
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<main id='content'>
+		<nav id='titlebar'>
+			<a href='./index.html'><span class='titlebar-link'>Places</span></a>
+			<a href='./about.html'><span class='titlebar-link'>About</span></a>
+			<a href='./contact.html'><span class='titlebar-link'>Contact</span></a>
+		</nav>
+		<header id='image-header'></header> 
+		<main id='articles'>
+			<h2 id='image-section-title'>Beautiful places</h2>
+			<article id='image-section'>
+				<a href='./details.html' class='image-link'>
+					<img alt="Sunrise Canyone, Italy" src='https://images.fasosites.com/16376_3431063xl.jpg?sold=Sold&hdots=False&v=202002071751&cv=202002071751'>
+					<h2>Sunrise Canyone, Italy</h2>
+				</a href='./details.html'>
+				<a href='./details.html' class='image-link'>
+					<img alt="Snow aspen trees, Germany" src='https://images.fasosites.com/16376_1084472xl.jpg?sold=Sold&hdots=False&v=202002071751&cv=202002071751'>
+					<h2>Snow aspen trees, Germany</h2>
+				</a>
+				<a href='./details.html' class='image-link'>
+					<img alt="Castle creek trail, Japan" src='https://images.fasosites.com/16376_3431065xl.jpg?sold=Sold&hdots=False&v=202002071751&cv=202002071751'>
+					<h2>Castle creek trail, Japan</h2>
+				</a>
+				<a href='./details.html' class='image-link'>
+					<img alt="Sunset Santa Fe Mountain, Argentina" src='https://images.fasosites.com/16376_782982xl.jpg?sold=Sold&hdots=False&v=202002071751&cv=202002071751'>
+					<h2>Sunset Santa Fe Mountain, Argentina</h2>
+				</a>
+				<a href='./details.html' class='image-link'>
+					<img alt="Sky High, South Korea" src='https://images.fasosites.com/16376_989994xl.jpg?sold=Sold&hdots=False&v=202002071751&cv=202002071751'>
+					<h2>Sky High, South Korea</h2>
+				</a>
+			</section>
+		</main>
+	</main>
+</body>
+</html>
