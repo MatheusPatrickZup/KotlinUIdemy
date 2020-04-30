@@ -1,0 +1,36 @@
+/* Section five */
+#section-five {
+	display: flex;
+	margin: 0px;
+}
+#section-five-image {
+	width: 66.66%;
+	overflow: hidden;
+}
+
+#section-five-follow-us {
+	width: calc(33.33% - 200px);
+	background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: left;
+	padding: 100px;
+}
+
+#submit-button {
+	background-color: pink;
+	border: 1px solid pink;
+	padding: 10px 5px;
+	color: white;
+	margin-top: 15px;
+	border-radius: 5px;
+	font-size: 18px;
+	width: 80%;
+}
+
+#submit-button:hover {
+	color: pink;
+	background-color: transparent;
+}

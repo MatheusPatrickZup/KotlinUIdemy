@@ -1,0 +1,28 @@
+/* Section one */
+#section-one {
+	background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	flex-grow: 1;
+	min-height: 700px;
+	padding: 0px 20%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#section-one-heading {
+	font-size: 44px;
+	letter-spacing: 8.8px;
+	line-height: 1.2;
+}
+
+#section-one-description {
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	color: #8b8b99;
+}

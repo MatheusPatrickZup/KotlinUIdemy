@@ -1,0 +1,19 @@
+/* Section six */
+#section-six {
+	background-color: #F6FCFA;
+	margin: 100px;
+	display: flex;
+	align-items: space-around;
+	justify-content: space-around;
+}
+
+.stats-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center
+}
+
+.stats-block > .section-description {
+	color: #74E3C1;
+	font-style: italic;
+}

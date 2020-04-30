@@ -1,0 +1,37 @@
+/* Navigation bar */
+#navigation-bar {
+	position: fixed;
+	width: calc(100% - 60px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+	background: white;
+}
+
+#logo {
+	vertical-align: flex-start;
+	width: 40px;
+}
+
+.menu-item {
+	color: black;
+	font-size: 14px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.dropdown {
+	border-top: 2px solid rgb(170, 210, 54);
+	background-color: white;
+	box-shadow: 0 2px 5px #ccc;
+}
+
+#buy-now-button {
+	font-size: 12px;
+	color: white;
+	background-color: rgb(170, 210, 54);
+	padding: 9px 34px;
+	border-radius: 4px;
+	border: 0px;
+}

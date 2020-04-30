@@ -1,0 +1,58 @@
+/* Section three */
+
+#section-three {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f7eee2;
+}
+
+.section-header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 50px;
+	margin-top: 100px;
+}
+
+#section-three-icons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding: 20px 80px;
+}
+
+.section-three-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 20%;
+}
+
+.item-icon {
+	background-color: #e3b375;
+	width: 60px;
+	font-size: 60px;
+	color: white;
+	border-radius: 50%;
+	padding: 40px;
+	transition: all .2s ease-in-out;
+}
+
+.item-icon:hover {
+	transform: scale(1.1);
+}
+
+.item-heading {
+	font-size: 24px;
+}
+
+.item-description {
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	font-weight: 500;
+	color: #8b8b99;
+	text-align: center;
+}

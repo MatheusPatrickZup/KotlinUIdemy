@@ -1,0 +1,58 @@
+/* Section two */
+#section-two {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 1 0 25%;
+}
+
+#section-two > article {
+	width: calc(25% - 40px);
+	min-width: 250px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	color: white;
+
+	padding: 50px 20px;
+}
+
+#section-two-step-one {
+	background-color: #5acda6;
+}
+
+#section-two-step-two {
+	background-color: #91ac41;
+}
+
+#section-two-step-three {
+	background-color: #e4b476;
+}
+
+#section-two-step-four {
+	background-color: #f69dad;
+}
+
+.step-icon {
+	width: 96px;
+	font-size: 96px;
+	transition: all .2s ease-in-out;
+}
+
+.step-icon:hover {
+	transform: scale(1.1);
+}
+
+.step-label {
+	font-size: 24px;
+}
+
+.step-description {
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 1.6;
+	font-weight: 400;
+}
