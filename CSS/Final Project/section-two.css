@@ -1,14 +1,13 @@
 /* Section two */
 #section-two {
-	display: flex;
-	flex-direction: row;
+	min-height: 600px;
 	flex-wrap: wrap;
 	flex: 1 0 25%;
+	margin: 0px;
 }
 
 #section-two > article {
-	width: calc(25% - 40px);
-	min-width: 250px;
+	width: calc(25% - 100px);
 
 	display: flex;
 	flex-direction: column;
@@ -17,7 +16,7 @@
 	text-align: center;
 	color: white;
 
-	padding: 50px 20px;
+	padding: 50px;
 }
 
 #section-two-step-one {
@@ -40,6 +39,7 @@
 	width: 96px;
 	font-size: 96px;
 	transition: all .2s ease-in-out;
+	margin-top: 50px;
 }
 
 .step-icon:hover {
@@ -48,6 +48,7 @@
 
 .step-label {
 	font-size: 24px;
+	margin: 20px 0px;
 }
 
 .step-description {
@@ -55,4 +56,14 @@
 	letter-spacing: 0.5px;
 	line-height: 1.6;
 	font-weight: 400;
+}
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+	#section-two {
+		flex: 1 0 100%;
+	}
+
+	#section-two > article {
+		width: calc(100% - 100px);
+	}
 }

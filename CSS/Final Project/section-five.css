@@ -1,8 +1,9 @@
 /* Section five */
 #section-five {
-	display: flex;
 	margin: 0px;
+	flex-wrap: wrap;
 }
+
 #section-five-image {
 	width: 66.66%;
 	overflow: hidden;
@@ -11,6 +12,9 @@
 #section-five-follow-us {
 	width: calc(33.33% - 200px);
 	background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -33,4 +37,16 @@
 #submit-button:hover {
 	color: pink;
 	background-color: transparent;
+}
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+	#section-five-image {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	#section-five-follow-us {
+		width: calc(100% - 50px);
+		padding: 25px;
+	}
 }

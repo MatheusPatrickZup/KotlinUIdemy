@@ -1,19 +1,11 @@
 /* Section three */
 
 #section-three {
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: #f7eee2;
-}
-
-.section-header {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin: 50px;
-	margin-top: 100px;
+	margin: 0px;
 }
 
 #section-three-icons {
@@ -47,6 +39,7 @@
 
 .item-heading {
 	font-size: 24px;
+	text-align: center;
 }
 
 .item-description {
@@ -55,4 +48,15 @@
 	font-weight: 500;
 	color: #8b8b99;
 	text-align: center;
+}
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+	#section-three-icons {
+		flex-wrap: wrap;
+	}
+
+	.section-three-icon {
+		width: 100%;
+		max-width: 100%;
+	}
 }

@@ -5,6 +5,7 @@
 
 html, body {
 	margin: 0px;
+	width: 100%;
 }
 
 main {
@@ -12,12 +13,17 @@ main {
 	flex-direction: column;
 }
 
-.green-fresh-text {
-	color: #91ac41;
-	font-size: 24px;
-	font-family: 'Caveat', cursive;
-	margin: 0;
-	margin-top: 35px;
+.section {
+	display: flex;
+	justify-content: flex-start;
+	margin: 25px;
+}
+
+.section-header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 50px;
 }
 
 .section-heading {
@@ -40,6 +46,14 @@ main {
 	font-weight: 400;
 }
 
+.green-fresh-text {
+	color: #91ac41;
+	font-size: 24px;
+	font-family: 'Caveat', cursive;
+	margin: 0;
+	margin-top: 35px;
+}
+
 .green-button {
 	font-size: 12px;
 	color: white;
@@ -48,6 +62,7 @@ main {
 	border-radius: 4px;
 	border: 0px;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 #page-footer {
