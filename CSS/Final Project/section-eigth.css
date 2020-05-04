@@ -1,0 +1,55 @@
+#section-eigth {
+	display: flex;
+	justify-content: flex-start;
+	margin: 50px;
+}
+
+#section-eigth .section-heading {
+	margin-bottom: 15px;
+}
+
+#section-eigth > div {
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	height: 100%;
+}
+
+#contact-us-panel {
+	width: calc(55% - 100px);
+}
+
+.section-eigth-store {
+	display: flex;
+	flex-direction: column;
+}
+
+.store-heading {
+	font-size: 25px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+.store-description {
+	font-weight: 400;
+	color: #8B8BA2;
+	margin-bottom: 5px;
+}
+
+#meet-our-team-panel {
+	width: calc(45% - 100px);
+}
+
+#section-eigth .section-input {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 20px;
+	font-size: 16px;
+}
+
+#section-eigth .green-button {
+	width: 150px;
+	margin-top: 10px;
+	font-size: 16px;
+	padding: 10px;
+}

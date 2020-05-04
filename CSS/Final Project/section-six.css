@@ -1,7 +1,8 @@
 /* Section six */
 #section-six {
 	background-color: #F6FCFA;
-	margin: 100px;
+	padding: 100px;
+	width: calc(100% - 200px);
 	display: flex;
 	align-items: space-around;
 	justify-content: space-around;

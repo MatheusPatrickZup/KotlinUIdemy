@@ -14,6 +14,12 @@
 	width: 40px;
 }
 
+#navigation-buttons {
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-end;
+}
+
 .menu-item {
 	color: black;
 	font-size: 14px;
@@ -21,17 +27,42 @@
 	cursor: pointer;
 }
 
-.dropdown {
+.navigation-dropdown {
+	position: relative;
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-end;
+}
+
+.navigation-dropdown > span:first-child {
+	margin-right: 5px;
+}
+
+.dropdown-menu {
+	visibility: hidden;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 30px;
 	border-top: 2px solid rgb(170, 210, 54);
 	background-color: white;
 	box-shadow: 0 2px 5px #ccc;
+	padding: 20px;
+	transition: all .2s;
 }
 
-#buy-now-button {
-	font-size: 12px;
-	color: white;
-	background-color: rgb(170, 210, 54);
-	padding: 9px 34px;
-	border-radius: 4px;
-	border: 0px;
+.dropdown-menu > span {
+	padding: 10px;
+}
+
+.dropdown-menu > span:not(:first-child) {
+	border-top: 1px solid #ccc;
+}
+
+#demo-pages {	
+	width: 200px;
+}
+
+#demo-pages:hover > .dropdown-menu, #demo-pages:active > .dropdown-menu {
+	visibility: visible;
 }
