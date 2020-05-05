@@ -1,0 +1,7 @@
+.product-header {
+  background-color: #232F3E;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 20px 0px 10px 0px;
+}

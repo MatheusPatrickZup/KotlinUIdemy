@@ -1,0 +1,26 @@
+.photo-preview {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: 2px solid transparent;
+	margin: 5px;
+	transition: all .2s;
+}
+
+.photo-preview:hover {
+	box-shadow: 1px 1px 10px gray;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.photo-preview-selected, .photo-preview:hover {
+	border: 2px solid lightblue;
+}
+
+.photo-preview-image {
+	width: 80px;
+	height: auto;
+}

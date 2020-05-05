@@ -1,0 +1,9 @@
+.features-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.preview-block {
+	display: flex;
+	justify-content: space-between;
+}
