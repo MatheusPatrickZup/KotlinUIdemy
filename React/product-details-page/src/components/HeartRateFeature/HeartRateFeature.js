@@ -7,12 +7,12 @@ class HeartRateFeature extends Component {
   }
 
   render() {
-    let date = new Date();
-    let formattedDate = date.getHours() + ":" + date.getMinutes();
-
     return (
       <span className="heart-rate-span">
-        <img src="https://media.giphy.com/media/dn07LBg1hpiVclEoQh/giphy.gif" />
+        <img
+          alt="Heart Rate"
+          src="https://media.giphy.com/media/dn07LBg1hpiVclEoQh/giphy.gif"
+        />
         {this.getHeartRate()}
       </span>
     );

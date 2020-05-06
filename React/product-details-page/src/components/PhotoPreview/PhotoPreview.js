@@ -5,7 +5,7 @@ class PhotoPreview extends Component {
   render() {
     let { imageUrl, name, id, selectColor, selectedColor } = this.props;
     let selected = selectedColor === id;
-    let additionalClass = selectedColor ? " photo-preview-selected" : "";
+    let additionalClass = selected ? " photo-preview-selected" : "";
 
     return (
       <div
