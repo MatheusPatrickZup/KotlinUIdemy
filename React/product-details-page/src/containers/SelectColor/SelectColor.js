@@ -13,6 +13,7 @@ class SelectColor extends Component {
           imageUrl={colorOption.imageUrl}
           name={colorOption.styleName}
           id={key}
+          key={key}
           selectColor={selectColor}
           selectedColor={key === selectedColor}
         />
