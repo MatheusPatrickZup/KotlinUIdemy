@@ -3,9 +3,9 @@ import "./Description.css";
 
 class Description extends Component {
   render() {
-    let { description } = this.props;
+    let { text } = this.props;
 
-    return <span className="text-description">{description}</span>;
+    return <span className="text-description">{text}</span>;
   }
 }
 

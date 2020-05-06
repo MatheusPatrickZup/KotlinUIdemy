@@ -19,7 +19,7 @@ class ProductPanel extends Component {
     return (
       <div className="product-panel">
         <Title text={productData.title} />
-        <Description description={productData.description} />
+        <Description text={productData.description} />
         <SelectColor
           selectColor={selectColor}
           selectedColor={selectedColor}
