@@ -1,0 +1,19 @@
+.button-span {
+	width: 100px;
+	height: 20px;
+	color: white;
+	background-color: #007383;
+	border-radius: 5px;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all .2s;
+}
+
+.button-span:hover {
+	background-color: white;
+	color: #007383;
+	transform: scale(1.1);
+	box-shadow: 1px 1px 5px gray;
+}

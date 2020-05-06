@@ -3,13 +3,11 @@ import './Title.css';
 
 class Title extends Component {
   render() {
-  	let {title, fontSize} = this.props;
+  	let {text} = this.props;
 
     return (
-      <span
-      	className="text-title"
-      	style={{fontSize: fontSize}}>
-      	{title}
+      <span className="text-title" >
+      	{text}
       </span>
     );
   }

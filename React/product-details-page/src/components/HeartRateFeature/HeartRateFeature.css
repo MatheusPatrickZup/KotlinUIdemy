@@ -1,0 +1,11 @@
+.heart-rate-span {
+	font-size: 48px;
+	font-weight: 500;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.heart-rate-span > img {
+	width: 70px;
+}

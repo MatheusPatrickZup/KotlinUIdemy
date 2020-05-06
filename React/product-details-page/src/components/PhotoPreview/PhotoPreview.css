@@ -11,7 +11,7 @@
 }
 
 .photo-preview:hover {
-	box-shadow: 1px 1px 10px gray;
+	box-shadow: 1px 1px 5px gray;
 	transform: scale(1.1);
 	cursor: pointer;
 }

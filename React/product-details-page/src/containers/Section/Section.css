@@ -1,4 +1,21 @@
 .product-section {
 	display: flex;
-	padding: 30px;
+	padding: 60px;
+	flex-wrap: wrap;
+}
+
+.section-panel {
+	width: 190%;
+	padding: 20px;
+}
+
+#photo-panel {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+	.section-panel {
+		width: calc(50% - 40px);
+	}
 }

@@ -1,4 +1,26 @@
-.label-image {
-	width: 50px;
+.label-span {
+	width: 100px;
 	height: auto;
+	background-color: #DDDCDD;
+	border-radius: 5px;
+	padding: 10px;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all .2s;
+}
+
+.label-span:last-child {
+	margin-right: 0px;
+}
+
+.label-span:hover {
+	transform: scale(1.1);
+	box-shadow: 1px 1px 5px gray;
+}
+
+.label-selected, .label-span:hover {
+	background-color: #818081;
+	color: white;
 }

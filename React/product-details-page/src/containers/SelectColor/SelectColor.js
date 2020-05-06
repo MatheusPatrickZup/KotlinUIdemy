@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './Features.css';
-import Title from '../Title/Title';
-import PhotoPreview from '../PhotoPreview/PhotoPreview';
+import './SelectColor.css';
+import Subtitle from '../../components/Subtitle/Subtitle';
+import PhotoPreview from '../../components/PhotoPreview/PhotoPreview';
 
-class Features extends Component {
+class SelectColor extends Component {
 	getColorOptions() {
 		let {selectColor, selectedColor, colorOptions} = this.props;
 
@@ -19,13 +19,10 @@ class Features extends Component {
 	}
 
 	render() {
-  		let {title} = this.props;
-
 	    return (
-	    	<div class='features-block'>
-		    	<Title
-		    		title="Select Color"
-		    		size="24px"
+	    	<div class='colors-block'>
+		    	<Subtitle
+		    		text="Select Color"
 				/>
 				<div class='preview-block'>
 					{this.getColorOptions()}
@@ -35,4 +32,4 @@ class Features extends Component {
   }
 }
 
-export default Features;
+export default SelectColor;

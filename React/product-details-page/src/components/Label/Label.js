@@ -3,13 +3,13 @@ import './Label.css';
 
 class Label extends Component {
 	render() {
-  		let {imageUrl, name} = this.props;
+  		let {text, selected, onClick} = this.props;
+  		let additionalClass = selected ? 'label-selected' : ''
 
 	    return (
-	    	<img
-	    		className="label-image"
-	    		src={imageUrl}
-	    		alt={name} />
+	    	<span className={"label-span " + additionalClass} onClick={onClick}>
+	    		<strong>{text}</strong>
+	    	</span>
 	    );
   	}
 }

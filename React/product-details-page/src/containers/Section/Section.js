@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './Section.css';
 import Photo from '../../components/Photo/Photo';
-import DescriptionPanel from '../DescriptionPanel/DescriptionPanel';
+import ProductPanel from '../ProductPanel/ProductPanel';
 
 class Section extends Component {
 	constructor(props) {
 		super(props);
 
 	    this.state = {
-	    	selectedColor: 0
+	    	selectedColor: 0,
+	    	selectedFeature: 'time'
     	};
 	}
 
@@ -18,21 +19,34 @@ class Section extends Component {
 		});
 	}
 
+	selectFeature(featureName) {
+		this.setState({
+			selectedFeature: featureName
+		});
+	}
+
 	render() {
 		let {productData} = this.props;
-		let {selectedColor} = this.state;
+		let {selectedColor, selectedFeature} = this.state;
 
 	    return (
 			<section className="product-section">
-      			<Photo
-      				image={productData.colorOptions[selectedColor].imageUrl}
-      				imageDescription={productData.colorOptions[selectedColor].styleName}
-  				/>
-      			<DescriptionPanel
-      				selectedColor={selectedColor}
-      				productData={productData}
-      				selectColor={this.selectColor.bind(this)}
-  				/>
+				<div id='photo-panel' className='section-panel'>
+	      			<Photo
+	      				image={productData.colorOptions[selectedColor].imageUrl}
+	      				imageDescription={productData.colorOptions[selectedColor].styleName}
+	      				selectedFeature={selectedFeature}
+	  				/>
+  				</div>
+  				<div className='section-panel'>
+	      			<ProductPanel
+	      				selectedColor={selectedColor}
+	      				selectedFeature={selectedFeature}
+	      				productData={productData}
+	      				selectColor={this.selectColor.bind(this)}
+	      				selectFeature={this.selectFeature.bind(this)}
+	  				/>
+  				</div>
       		</section>
 	     );
   	}
