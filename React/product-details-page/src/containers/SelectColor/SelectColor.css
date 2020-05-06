@@ -5,4 +5,13 @@
 
 .preview-block {
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+	.preview-block {
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+	}
 }

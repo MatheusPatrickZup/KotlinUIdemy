@@ -1,5 +1,11 @@
 .time-span {
-	font-size: 48px;
+	font-size: 1.5em;
 	font-weight: 500;
 	color: white;
+}
+
+@media only screen and (min-width: 768px) {
+	.time-span {
+		font-size: 2em;
+	}
 }
