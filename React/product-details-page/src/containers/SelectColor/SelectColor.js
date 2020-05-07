@@ -10,12 +10,11 @@ class SelectColor extends Component {
     return colorOptions.map((colorOption, key) => {
       return (
         <PhotoPreview
+          key={key}
           imageUrl={colorOption.imageUrl}
           name={colorOption.styleName}
-          id={key}
-          key={key}
-          selectColor={selectColor}
-          selectedColor={key === selectedColor}
+          selectColor={selectColor.bind(this, key)}
+          selected={key === selectedColor}
         />
       );
     });
@@ -23,9 +22,9 @@ class SelectColor extends Component {
 
   render() {
     return (
-      <div class="colors-block">
+      <div className="colors-block">
         <Subtitle text="Select Color" />
-        <div class="preview-block">{this.getColorOptions()}</div>
+        <div className="preview-block">{this.getColorOptions()}</div>
       </div>
     );
   }

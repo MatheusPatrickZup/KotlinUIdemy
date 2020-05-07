@@ -7,7 +7,10 @@ import ProductData from "../../components/ProductData/ProductData";
 
 it("should render without throwing an error", function () {
   const wrapper = shallow(
-    <SelectColor colorOptions={ProductData.colorOptions} />
+    <SelectColor
+      selectColor={jest.fn()}
+      colorOptions={ProductData.colorOptions}
+    />
   );
 
   expect(wrapper.find(Subtitle).length).toBe(1);

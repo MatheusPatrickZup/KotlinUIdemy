@@ -7,5 +7,7 @@ import ProductData from "../../components/ProductData/ProductData";
 
 it("should render without throwing an error", function () {
   expect(shallow(<Main />).contains(<Header />)).toBe(true);
-  expect(shallow(<Main />).contains(<Section productData={ProductData}/>)).toBe(true);
+  expect(
+    shallow(<Main />).contains(<Section productData={ProductData} />)
+  ).toBe(true);
 });

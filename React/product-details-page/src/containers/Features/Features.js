@@ -8,9 +8,9 @@ class Features extends Component {
     let { selectFeature, selectedFeature } = this.props;
 
     return (
-      <div class="features-block">
+      <div className="features-block">
         <Subtitle text="Features" />
-        <div class="features-overview">
+        <div className="features-overview">
           <Label
             selected={selectedFeature === "time"}
             onClick={selectFeature.bind(this, "time")}
